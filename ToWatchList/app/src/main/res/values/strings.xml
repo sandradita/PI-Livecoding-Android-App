@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">To-Watch List</string>
+
+    <string name="btn_save_to_watch">Add to watch list</string>
+    <string name="btn_remove_from_watch">Remove from watch list</string>
+
+    <string name="full_view_director">Director</string>
+    <string name="full_view_genres">Genres</string>
+    <string name="full_view_stars">Stars</string>
+    <string name="full_view_rating">IMDB rating</string>
+    <string name="full_view_plot">Plot</string>
+
+    <string name="no_movies">No movies saved</string>
+
+</resources>

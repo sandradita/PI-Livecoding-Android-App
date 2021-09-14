@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/savedMoviesFragment">
+
+    <fragment
+        android:id="@+id/savedMoviesFragment"
+        android:name="com.postindustria.livecodingapp.ui.savedmovies.SavedMoviesFragment"
+        tools:layout="@layout/fragment_saved_movies" />
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.postindustria.livecodingapp.ui.seacrh.SearchMovieFragment"
+        tools:layout="@layout/fragment_search" />
+
+    <fragment
+        android:id="@+id/fullViewFragment"
+        android:name="com.postindustria.livecodingapp.ui.fullview.FullViewFragment"
+        tools:layout="@layout/fragment_full_view">
+        <argument
+            android:name="movie"
+            app:argType="com.postindustria.livecodingapp.model.Movie" />
+    </fragment>
+
+    <action
+        android:id="@+id/showFullMovie"
+        app:destination="@id/fullViewFragment">
+        <argument
+            android:name="movie"
+            app:argType="com.postindustria.livecodingapp.model.Movie" />
+    </action>
+
+</navigation>
